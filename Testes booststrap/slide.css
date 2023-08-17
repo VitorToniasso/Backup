@@ -1,0 +1,17 @@
+@charset
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    margin: o auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
