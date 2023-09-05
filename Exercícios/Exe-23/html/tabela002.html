@@ -22,15 +22,29 @@
         }
 
         body#img01 {
-            background-image:url(Imagens/cidade.jpg) ;
+            background-image:url(../Imagens/cidade.jpg) ;
             background-position: right center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
 
         table {
             width: 500px;
             border-collapse: collapse;
             background-color: white;
+            position: relative;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: 1;
+            background-color: gray;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -39,6 +53,11 @@
             background-color: gray;
             color: white;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
         td.num {
             text-align: right;
             background-color: white;
@@ -50,6 +69,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -58,10 +78,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -176,10 +197,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum non ex. Distinctio perspiciatis molestiae, hic impedit debitis amet nostrum? Architecto itaque rem fugiat earum beatae magnam expedita incidunt eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa ipsam earum, molestias tempora temporibus sit ducimus nihil recusandae provident voluptate quaerat repellendus, consequuntur reiciendis eaque dignissimos fuga adipisci assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, itaque! Asperiores facere praesentium rem voluptas qui impedit exercitationem quo ratione ab! Eum ex delectus culpa blanditiis omnis provident recusandae rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis iste voluptatum voluptates cum nihil ratione voluptatem numquam veritatis possimus sint. Exercitationem, quibusdam debitis unde expedita inventore necessitatibus hic modi doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum non ex. Distinctio perspiciatis molestiae, hic impedit debitis amet nostrum? Architecto itaque rem fugiat earum beatae magnam expedita incidunt eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa ipsam earum, molestias tempora temporibus sit ducimus nihil recusandae provident voluptate quaerat repellendus, consequuntur reiciendis eaque dignissimos fuga adipisci assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, itaque! Asperiores facere praesentium rem voluptas qui impedit exercitationem quo ratione ab! Eum ex delectus culpa blanditiis omnis provident recusandae rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis iste voluptatum voluptates cum nihil ratione voluptatem numquam veritatis possimus sint. Exercitationem, quibusdam debitis unde expedita inventore necessitatibus hic modi doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum non ex. Distinctio perspiciatis molestiae, hic impedit debitis amet nostrum? Architecto itaque rem fugiat earum beatae magnam expedita incidunt eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa ipsam earum, molestias tempora temporibus sit ducimus nihil recusandae provident voluptate quaerat repellendus, consequuntur reiciendis eaque dignissimos fuga adipisci assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, itaque! Asperiores facere praesentium rem voluptas qui impedit exercitationem quo ratione ab! Eum ex delectus culpa blanditiis omnis provident recusandae rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis iste voluptatum voluptates cum nihil ratione voluptatem numquam veritatis possimus sint. Exercitationem, quibusdam debitis unde expedita inventore necessitatibus hic modi doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum non ex. Distinctio perspiciatis molestiae, hic impedit debitis amet nostrum? Architecto itaque rem fugiat earum beatae magnam expedita incidunt eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa ipsam earum, molestias tempora temporibus sit ducimus nihil recusandae provident voluptate quaerat repellendus, consequuntur reiciendis eaque dignissimos fuga adipisci assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, itaque! Asperiores facere praesentium rem voluptas qui impedit exercitationem quo ratione ab! Eum ex delectus culpa blanditiis omnis provident recusandae rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis iste voluptatum voluptates cum nihil ratione voluptatem numquam veritatis possimus sint. Exercitationem, quibusdam debitis unde expedita inventore necessitatibus hic modi doloribus.</p>
+
 </body>
 </html>
