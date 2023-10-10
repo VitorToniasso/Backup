@@ -22,7 +22,6 @@ main {
     position: relative;
     height: 100vh;
 }
-
 section#telefone {
     position: absolute;
     top: 50%;
